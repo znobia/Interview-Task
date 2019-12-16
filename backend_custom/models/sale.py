@@ -18,7 +18,7 @@ class SaleOrderLine(models.Model):
     	if self.product_id.product_accessories_ids:
     		print ("insssssssssssssssssss")
     		for accessory in self.product_id.product_accessories_ids:
-    			print (accessory,">>>>>>>>><<<<<<<<<mm")
+    			print (accessory,">>>>>>>>><<<<<<<<<productssssss")
     			
 
     	return result
