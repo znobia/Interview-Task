@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="assets_backend_user_menu" name="Backend Assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+        	<link rel="stylesheet" type="text/less" href="/backend_custom/static/src/less/webclient_layout.less"/>
+            <script type="text/javascript" src="/backend_custom/static/src/js/user_menu.js"></script>
+        </xpath>
+
+    </template>
+</odoo>

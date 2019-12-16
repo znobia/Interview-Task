@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_inherit" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.smartystreets</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="website_sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <div id="sale_product_catalog_settings" position="after">
+                <h2>Smartystreets Verification Address</h2>
+                <div class="row mt16 o_settings_container" id="smartystreets_verification_settings">
+                    <div class="col-12 col-lg-6 o_setting_box" id="smartystreets_verification_address_setting">
+                        <div class="o_setting_right_pane">
+                            <div class="content-group">
+
+                                <div class="row mt16">
+                                    <label class="col-lg-3 o_light_label" for="validate_type"/>
+                                    <field name="validate_type"/>
+                                </div>
+
+                                <div class="row mt16">
+                                    <label class="col-lg-3 o_light_label" string="Auth ID" for="auth_id"/>
+                                    <field name="auth_id"/>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-3 o_light_label" for="auth_token" />
+                                    <field name="auth_token"/>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </field>
+    </record>
+</odoo>

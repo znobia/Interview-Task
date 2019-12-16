@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_product_template_form_inherit" model="ir.ui.view">
+            <field name="name">product.template.form.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+        	<field name="arch" type="xml">
+            	<xpath expr="//page[@name='notes']" position="after">
+            		<page string="Sales Accessories" name="sales_accessories">
+            			<field name="product_accessories_ids" widget="one2many_list">
+        				 	<tree string="Sales Accessories" editable="bottom">
+	                            <field name="product_id" required="1"/>
+	                            <field name="qty"/>
+                        	</tree>
+                    	</field>
+            		</page>
+            	</xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>
